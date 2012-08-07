@@ -1,0 +1,62 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>org.jpos.jposext</groupId>
+	<artifactId>context-mgmt-annotation</artifactId>
+	<version>1.0-SNAPSHOT</version>
+	<name>context-mgmt-annotation</name>
+	<description>Set of annotations dedicated to context management</description>
+
+	<properties>
+
+		<!-- ======================== -->
+		<!-- BEGIN Plugin version -->
+		<!-- ======================== -->
+		<maven-compiler-plugin.version>2.1</maven-compiler-plugin.version>
+		<!-- ======================== -->
+		<!-- END Plugin version -->
+		<!-- ======================== -->
+
+	</properties>
+
+	<scm>
+
+		<developerConnection>scm:git:ssh://git@github.com/dgrandemange/context-mgmt-annotation.git</developerConnection>
+		<connection>scm:git:ssh://git@github.com/dgrandemange/context-mgmt-annotation.git</connection>
+		<url>https://github.com/dgrandemange/context-mgmt-annotation</url>
+	</scm>
+
+	<distributionManagement>
+
+		<!-- To deploy as a snapshot : -->
+		<!-- mvn -DaltDeploymentRepository=snapshot-repo::default::file:../dgrandemange-mvn-repo/snapshots deploy -->
+
+		<!-- To deploy as a release : -->
+		<!-- mvn -DaltDeploymentRepository=repo::default::file:../dgrandemange-mvn-repo/releases deploy -->
+
+		<repository>
+			<id>repo</id>
+			<url>https://github.com/dgrandemange/dgrandemange-mvn-repo/raw/master/releases</url>
+		</repository>
+		<snapshotRepository>
+			<id>snapshot-repo</id>
+			<url>https://github.com/dgrandemange/dgrandemange-mvn-repo/raw/master/snapshots</url>
+		</snapshotRepository>
+	</distributionManagement>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>${maven-compiler-plugin.version}</version>
+				<configuration>
+					<source>1.5</source>
+					<target>1.5</target>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+
+</project>
