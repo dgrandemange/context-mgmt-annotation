@@ -4,11 +4,11 @@
 
 <u>Sample participant class ''CheckRequiredFields'' :</u>
 <pre>
-package org.jpos.jposext.jposworkflow.sample.participant;
+package fr.dgrandemange.demoapp.participant;
 
 import org.jpos.jposext.ctxmgmt.annotation.UpdateContextRule;
 import org.jpos.jposext.ctxmgmt.annotation.UpdateContextRules;
-import org.jpos.jposext.jposworkflow.sample.ICtxAttr;
+import fr.dgrandemange.demoapp.ICtxAttr;
 
 @UpdateContextRules({
 		@UpdateContextRule(attrNames = ICtxAttr.REQUIREDFLD_ATTR0),
@@ -22,8 +22,7 @@ public class CheckRequiredFields extends AbstractGroupSelectorParticipant {
 	/*
 	 * (non-Javadoc)
 	 * 
-	 * @see org.jpos.jposext.jposworkflow.sample.participant.
-	 * AbstractGroupSelectorParticipant#prepare(long)
+	 * @see fr.dgrandemange.demoapp.participant.AbstractGroupSelectorParticipant#prepare(long)
 	 */
 	public int prepare(long id) {
 
@@ -41,8 +40,7 @@ public class CheckRequiredFields extends AbstractGroupSelectorParticipant {
 	/*
 	 * (non-Javadoc)
 	 * 
-	 * @see org.jpos.jposext.jposworkflow.sample.participant.
-	 * AbstractGroupSelectorParticipant#select(long)
+	 * @see fr.dgrandemange.demoapp.participant.AbstractGroupSelectorParticipant#select(long)
 	 */
 	public String select(long id) {
 		String transitionId;
@@ -75,7 +73,7 @@ Note : context attribute names are externalized in a dedicated interface ''ICtxA
 
 <u>Interface ''ICtxAttr'' :</u>
 <pre>
-package org.jpos.jposext.jposworkflow.sample;
+package fr.dgrandemange.demoapp;
 
 public interface ICtxAttr {
 	
