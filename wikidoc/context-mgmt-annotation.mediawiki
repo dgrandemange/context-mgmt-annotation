@@ -6,8 +6,8 @@
 <pre>
 package fr.dgrandemange.demoapp.participant;
 
-import org.jpos.jposext.ctxmgmt.annotation.UpdateContextRule;
-import org.jpos.jposext.ctxmgmt.annotation.UpdateContextRules;
+import fr.dgrandemange.ctxmgmt.annotation.UpdateContextRule;
+import fr.dgrandemange.ctxmgmt.annotation.UpdateContextRules;
 import fr.dgrandemange.demoapp.ICtxAttr;
 
 @UpdateContextRules({
