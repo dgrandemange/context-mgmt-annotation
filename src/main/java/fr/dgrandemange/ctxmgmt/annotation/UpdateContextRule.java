@@ -1,4 +1,4 @@
-package org.jpos.jposext.ctxmgmt.annotation;
+package fr.dgrandemange.ctxmgmt.annotation;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
