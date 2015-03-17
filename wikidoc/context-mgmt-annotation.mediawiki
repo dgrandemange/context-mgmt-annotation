@@ -1,4 +1,4 @@
-<p>These annotations are intented to be used on participant classes (implementing jPos TransactionParticipant or GroupSelector interfaces). In a few words, these annotations are a way to explicitly specify which context attributes a participant may update while being processed.</p>
+<p>These annotations should be used on classes particpating to a transaction flow. This is a way to explicitly specify which context attributes such participant class may update while being processed.</p>
 
 =Using annotations in participant : typical usage=
 
