@@ -5,11 +5,29 @@
 	<groupId>com.github.dgrandemange</groupId>
 	<artifactId>context-mgmt-annotation</artifactId>
 	<version>2.0.0</version>
+	
 	<name>context-mgmt-annotation</name>
 	<description>Set of annotations dedicated to context management</description>
+	<url>https://github.com/dgrandemange/context-mgmt-annotation</url>
+
+	<licenses>
+		<license>
+			<name>MIT License</name>
+			<url>http://www.opensource.org/licenses/mit-license.php</url>
+		</license>
+	</licenses>
+
+	<developers>
+		<developer>
+			<name>Damien GRANDEMANGE</name>
+			<email>damien.grandemange@gmail.com</email>
+			<organization>GitHub</organization>
+			<organizationUrl>https://github.com/dgrandemange</organizationUrl>
+		</developer>
+	 </developers>
 
 	<properties>
-
+	
 		<!-- ======================== -->
 		<!-- BEGIN Plugin version -->
 		<!-- ======================== -->
@@ -17,7 +35,7 @@
 		<!-- ======================== -->
 		<!-- END Plugin version -->
 		<!-- ======================== -->
-
+	
 	</properties>
 
 	<scm>
